@@ -4,7 +4,7 @@
 def get_event_date(event):
   return event.date
 
-#This module return the list of all user who currently loged in machine.
+#This module return the dictionary of all user who currently loged in machine.
 def current_users(events): 
   events.sort(key=get_event_date) #sort the event according to the date
   machines = {} #create a dictionary to store the user and the machine
